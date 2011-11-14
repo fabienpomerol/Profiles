@@ -1,0 +1,37 @@
+[user]
+    name = "Fabien Pomerol"
+    email = fabien.pomerol@gmail.com
+
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+    logg = log --decorate --graph.
+#     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    ci   = commit
+    di   = diff
+    st   = status
+    sta  = stash
+    br   = branch
+    co   = checkout
+    cat  = cat-file -p
+    lg   = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --da    te=relative
+    lga  = "!sh -c 'git log --author=\"$1\" -p $2' -"
+    lol  = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lint = "!sh -c 'git status | awk \"/modified/ {print \\$3}\" | xargs -L 1 php -l'"
+
+[color]
+    branch = auto
+    interactive = auto
+    diff = auto
+    status = auto
+
+[core]
+    excludesfile = /home/sensio/.git/.gitignore
+    eol = lf
+B
+B
+A
+    whitespace = trailing-space,space-before-tab,tab-in-indent
